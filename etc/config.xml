@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/config.xsd">
+    <default>
+        <carriers>
+            <flatrate>
+                <delivery_days>1,2,3,4,5</delivery_days>
+                <dispatch_days>1,2,3,4,5</dispatch_days>
+                <delivery_time>1</delivery_time>
+                <cutoff_time>17:00:00</cutoff_time>
+            </flatrate>
+            <freeshipping>
+                <delivery_days>1,2,3,4,5</delivery_days>
+                <dispatch_days>1,2,3,4,5</dispatch_days>
+                <delivery_time>1</delivery_time>
+                <cutoff_time>17:00:00</cutoff_time>
+            </freeshipping>
+            <tablerate>
+                <delivery_days>1,2,3,4,5</delivery_days>
+                <dispatch_days>1,2,3,4,5</dispatch_days>
+                <delivery_time>1</delivery_time>
+                <cutoff_time>17:00:00</cutoff_time>
+            </tablerate>
+        </carriers>
+    </default>
+</config>
+

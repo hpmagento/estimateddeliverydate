@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/system_file.xsd">
+    <system>
+        <section id="carriers" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Shipping Methods</label>
+            <tab>sales</tab>
+            <resource>Magento_Shipping::carriers</resource>
+            <group id="flatrate" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Flat Rate</label>
+                <field id="delivery_days" translate="label" type="multiselect" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Days</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                    <comment>Days of the week deliveries can occur</comment>
+                </field>
+                <field id="dispatch_days" translate="label" type="multiselect" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Dispatch Days</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                    <comment>Days of the week dispatches can occur</comment>
+                </field>
+                <field id="delivery_time" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Time (Days)</label>
+                    <comment>Number of days after dispatch that delivery occurs</comment>
+                </field>
+                <field id="delivery_exception_dates" translate="label" type="textarea" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Exception Dates</label>
+                    <comment>Format: day/month/year, one per line</comment>
+                </field>
+                <field id="dispatch_exception_dates" translate="label" type="textarea" sortOrder="50" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Dispatch Exception Dates</label>
+                    <comment>Format: day/month/year, one per line</comment>
+                </field>
+                <field id="cutoff_time" translate="label" type="time" sortOrder="60" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Dispatch Cutoff Time</label>
+                    <comment>Format: HH:MM:SS</comment>
+                </field>
+            </group>
+            <group id="freeshipping" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Free Shipping</label>
+                <field id="delivery_days" translate="label" type="multiselect" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Days</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                    <comment>Days of the week deliveries can occur</comment>
+                </field>
+                <field id="dispatch_days" translate="label" type="multiselect" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Dispatch Days</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                    <comment>Days of the week dispatches can occur</comment>
+                </field>
+                <field id="delivery_time" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Time (Days)</label>
+                    <comment>Number of days after dispatch that delivery occurs</comment>
+                </field>
+                <field id="delivery_exception_dates" translate="label" type="textarea" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Exception Dates</label>
+                    <comment>Format: day/month/year, one per line</comment>
+                </field>
+                <field id="dispatch_exception_dates" translate="label" type="textarea" sortOrder="50" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Dispatch Exception Dates</label>
+                    <comment>Format: day/month/year, one per line</comment>
+                </field>
+                <field id="cutoff_time" translate="label" type="time" sortOrder="60" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Dispatch Cutoff Time</label>
+                    <comment>Format: HH:MM:SS</comment>
+                </field>
+            </group>
+            <group id="tablerate" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Table Rate</label>
+                <field id="delivery_days" translate="label" type="multiselect" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Days</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                    <comment>Days of the week deliveries can occur</comment>
+                </field>
+                <field id="dispatch_days" translate="label" type="multiselect" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Dispatch Days</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                    <comment>Days of the week dispatches can occur</comment>
+                </field>
+                <field id="delivery_time" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Time (Days)</label>
+                    <comment>Number of days after dispatch that delivery occurs</comment>
+                </field>
+                <field id="delivery_exception_dates" translate="label" type="textarea" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Delivery Exception Dates</label>
+                    <comment>Format: day/month/year, one per line</comment>
+                </field>
+                <field id="dispatch_exception_dates" translate="label" type="textarea" sortOrder="50" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Dispatch Exception Dates</label>
+                    <comment>Format: day/month/year, one per line</comment>
+                </field>
+                <field id="cutoff_time" translate="label" type="time" sortOrder="60" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Dispatch Cutoff Time</label>
+                    <comment>Format: HH:MM:SS</comment>
+                </field>
+            </group>
+            <!-- Add similar groups for other custom methods if necessary -->
+        </section>
+    </system>
+</config>

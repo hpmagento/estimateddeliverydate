@@ -1,0 +1,29 @@
+{
+    "name": "hardik/module-estimateddeliverydate",
+    "description": "The Hardik_EstimatedDeliveryDate module adds functionality to calculate and display the earliest possible delivery date for Flat Rate, Free Shipping and Table Rate shipping method during the checkout process.",
+    "require": {
+        "php": "~8.1.0||~8.2.0",
+        "ipinfo/ipinfo": "^2.2.0"
+    },
+    "type": "magento2-module",
+    "version": "2.0.0",
+    "minimum-stability": "dev",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Hardik Patel"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/hpmagento/estimateddeliverydate.git"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Hardik\\EstimatedDeliveryDate\\": ""
+        }
+    }
+}
